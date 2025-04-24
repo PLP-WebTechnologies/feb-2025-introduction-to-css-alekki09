@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }body {
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    /* Layout */
+    section {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    ol {
+        padding-left: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #3498db;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    form {
+        display: grid;
+        gap: 15px;
+        max-width: 500px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: #27ae60;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #219150;
+    }
+</style>
+
+</head>
+<body><!-- Ordered List with Roman Numerals -->
+<section>
+    <h2>Roman Numerals List</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+</section>
+
+<!-- External Image from Pexels -->
+<section>
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Sample Pexels Image">
+</section>
+
+<!-- Table of Contacts -->
+<section>
+    <h2>Contact List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>+123456789</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Ave</td>
+                <td>+987654321</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>Mike Brown</td>
+                <td>789 Pine Rd</td>
+                <td>+1122334455</td>
+                <td>mike@example.com</td>
+            </tr>
+            <tr>
+                <td>Lisa White</td>
+                <td>321 Cedar St</td>
+                <td>+9988776655</td>
+                <td>lisa@example.com</td>
+            </tr>
+            <tr>
+                <td>Tom Clark</td>
+                <td>654 Maple Blvd</td>
+                <td>+5566778899</td>
+                <td>tom@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Registration Form -->
+<section>
+    <h2>Registration Form</h2>
+    <form>
+        <!-- Name Field -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Password Field -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+        </div>
+
+        <!-- Date Field -->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Dropdown -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Travel</label>
+        </div>
+
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+</body>
+</html>
